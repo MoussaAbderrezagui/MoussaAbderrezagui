@@ -1,1 +1,174 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- SEO Meta Tags -->
+  <title>MathLinguistic - منصة ذكية للحساب الذهني</title>
+  <meta name="description" content="تعلّم الرياضيات عبر مستويات تفاعلية. اختبر سرعتك واربح النقاط!">
+  <meta name="author" content="Moussa Abderrezagui">
+
+  <!-- Mobile & PWA -->
+  <meta name="theme-color" content="#3498db" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="MathLinguistic" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+
+  <!-- Manifest & Icons -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512.png" />
+
+  <!-- CSS Files (Local Only) -->
+  <link rel="stylesheet" href="styles/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <style>
+    /* تنسيق زر التثبيت المدمج للتجربة */
+    #install-pwa-btn {
+      background: #3498db;
+      color: white;
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-right: 8px;
+    }
+    #install-pwa-btn:hover {
+      background: #2980b9;
+    }
+    [data-theme="dark"] #install-pwa-btn {
+      background: #2c3e50;
+    }
+    [data-theme="dark"] #install-pwa-btn:hover {      background: #1a252f;
+    }
+    /* إخفاء الزر افتراضياً حتى يتأكد الجافاسكريبت من إمكانية التثبيت */
+    #install-pwa-btn {
+      display: none; 
+    }
+  </style>
+</head>
+<body>
+  <!-- الهيدر -->
+  <header>
+    <button id="menu-toggle" aria-label="فتح القائمة">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="site-logo">
+      <i class="fas fa-calculator"></i>
+      <span>MathLinguistic</span>
+    </div>
+
+    <button id="theme-toggle" aria-label="تبديل الوضع">
+      <i class="fas fa-moon"></i>
+    </button>
+  </header>
+
+  <!-- القائمة الجانبية -->
+  <aside id="sidebar-menu" class="sidebar" aria-hidden="true">
+    <nav id="sidebar-nav">
+      <ul id="sidebar-menu-list">
+        <li>
+          <button class="menu-item" data-target="home">
+            <i class="fas fa-home"></i> الرئيسية
+          </button>
+        </li>
+        <!-- تمت إزالة روابط المستويات مؤقتاً للاختبار -->
+        <li>
+          <button class="menu-item" data-target="achievements">
+            <i class="fas fa-trophy"></i> الإنجازات
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- المحتوى الرئيسي -->
+  <main id="main-content">
+    <div style="text-align: center; padding: 2rem;">
+      <h1>مرحباً بك في MathLinguistic</h1>
+      <p>هذه نسخة تجريبية نظيفة لاكتشاف مشكلة التثبيت.</p>
+      <p>إذا ظهر زر التثبيت في الأسفل ويعمل، فالمشكلة في ملفات الألعاب المحذوفة.</p>    </div>
+  </main>
+
+  <!-- التذييل -->
+  <footer>
+    <nav id="static-pages">
+      <button class="footer-link" data-static-page="about">من نحن</button>
+      <button class="footer-link" data-static-page="contact">اتصل بنا</button>
+      <button class="footer-link" data-static-page="terms">شروط الاستخدام</button>
+      <button class="footer-link" data-static-page="privacy">سياسة الخصوصية</button>
+    </nav>
+
+    <div id="social-icons">
+      <a href="https://facebook.com/yourpage" target="_blank" aria-label="فيسبوك">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://youtube.com/yourchannel" target="_blank" aria-label="يوتيوب">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://wa.me/213781263021" target="_blank" aria-label="واتساب">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      
+      <!-- زر التثبيت -->
+      <button id="install-pwa-btn" aria-label="تثبيت التطبيق">
+        <i class="fas fa-download"></i>
+      </button>
+    </div>
+
+    <div id="contact-info">
+      <p>البريد الإلكتروني: <a href="mailto:moussa.abderrezagui191@gmail.com">moussa.abderrezagui191@gmail.com</a></p>
+      <p>واتساب: <a href="https://wa.me/213781263021">+213 781 263 021</a></p>
+    </div>
+
+    <div id="copyright">
+      &copy; 2026 MathLinguistic. جميع الحقوق محفوظة.
+    </div>
+
+    <button id="back-to-top" aria-label="العودة إلى الأعلى">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </footer>
+
+  <!-- Scripts (Only Main Logic) -->
+  <!-- تم إزالة جميع ملفات الألعاب والمستويات -->
+  <script src="scripts/main.js"></script>
+  
+  <!-- كود بسيط للتحقق من ظهور زر التثبيت في الكونسول للمساعدة -->
+  <script>
+    window.addEventListener('beforeinstallprompt', (e) => {      console.log('✅ حدث التثبيت متاح!');
+      e.preventDefault();
+      const btn = document.getElementById('install-pwa-btn');
+      if(btn) {
+        btn.style.display = 'flex';
+        btn.onclick = () => {
+          e.prompt();
+          e.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+              console.log('تم قبول التثبيت');
+            } else {
+              console.log('تم رفض التثبيت');
+            }
+            btn.style.display = 'none';
+          });
+        };
+      }
+    });
+
+    window.addEventListener('appinstalled', () => {
+      console.log('🎉 تم تثبيت التطبيق بنجاح!');
+      document.getElementById('install-pwa-btn').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
