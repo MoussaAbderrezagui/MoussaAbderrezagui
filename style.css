@@ -1,0 +1,30 @@
+/* تصميم حاوية العداد */
+.counter-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: #f4f4f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#display {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+}
+
+.btn-group button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-increase { background: #28a745; color: white; }
+.btn-decrease { background: #dc3545; color: white; }
+.btn-reset { background: #6c757d; color: white; }
